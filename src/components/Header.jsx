@@ -11,7 +11,6 @@ const Header = () => {
     // this gives us the current URL we are on our site
     const pathname = useLocation();
     const [Navigation, setNavigation] = useState(false);
-    const [open, setOpen] = useState(false);
     
     // to make the menu appear when the button is pressed
     const toggleNavigation = () => {
@@ -21,8 +20,12 @@ const Header = () => {
           setNavigation(true);
         }
 
-        setOpen(!open);
-    };
+        if (Navigation) {
+            return (
+            <div className="bg-n-8"></div>
+            )
+        }
+    }
 
     // a func to close the menu when a feature is pressed
     const handleClick = () => {
@@ -57,7 +60,7 @@ const Header = () => {
                          } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold font-code
                          ${
                            pathname.hash === item.url
-                             ? "z-2 lg:text-color-1 rounded-full  shadow-[0px_0px_183px_38px_rgba(200,165,131,1)]"
+                             ? "z-2 lg:text-color-1 rounded-full  shadow-[0px_0px_200px_28px_rgba(200,165,131,1)]"
                              : "  lg:text-n-2"
                          } lg:leading-5 lg:hover:text-n-3 xl:px-12`}
                 >
@@ -66,7 +69,7 @@ const Header = () => {
               ))}
             </div>
 
-            <HamburgerMenu open={open}/>
+            <HamburgerMenu />
           </nav>
 
           <Button className="hidden lg:flex" href="#contact">

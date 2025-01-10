@@ -1,7 +1,7 @@
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
 // Gonna make this a completely reusable button
-const Button = ({children, white, px, className, href}) => {
+const Button = ({children, white, px, className, href, onClick}) => {
   // returning round braces because we want to return immediately, an automatic one
 
   // -color-[] & -n-[] are coming from tailwind.config
@@ -15,7 +15,7 @@ const Button = ({children, white, px, className, href}) => {
   const spanClasses = `relative z-10`
 
   const renderButton = () => (
-    <button className={classes}>
+    <button className={classes} onClick={onClick}>
       
       <span className={spanClasses}>{children}</span>
       {ButtonSvg(white)}
@@ -23,18 +23,17 @@ const Button = ({children, white, px, className, href}) => {
     </button>
   );
 
-  const renderLink = () => {
+const renderLink = () => {
+  return (
     <a className={classes} href={href}>
-      
       <span className={spanClasses}>{children}</span>
       {ButtonSvg(white)}
-    
-    </a>;
-  };
+    </a>
+  );
+};
 
 
   // calling the function we just made
-  
   return href ? renderLink() : renderButton();
 };
 

@@ -19,7 +19,7 @@
 @layer base {
     body { 
         /* can change the body color and text colors etc for JuvoU later on */
-        @apply font-sans bg-n-1 text-n-1 text-base;
+        @apply font-sans bg-n-8 text-n-1 text-base;
     }
 }
 

@@ -21,6 +21,8 @@ import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
 
+import juvou from "./new_juvou.svg";
+import juvou_text from "./juvou_text.svg";
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
@@ -78,6 +80,8 @@ import twitter from "./socials/twitter.svg";
 export {
   brainwave,
   check,
+  juvou,
+  juvou_text,
   check2,
   loading1,
   brainwaveSymbol,

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import { brainwave } from "../assets";
+import { juvou, juvou_text } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -69,9 +69,11 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a href="#hero" className="block w-[12rem] xl:mr-8">
-          <img src={brainwave} width={190} height={40} alt="brainwave" />
+        <a href="#hero" className="flex block w-[12rem] xl:mr-8">
+          <img src={juvou} width={90} alt="JuvoU Logo" />
         </a>
+
+        {/* <img src={juvou_text} width={120} alt="JuvoU" /> */}
 
         <nav
           className={`${

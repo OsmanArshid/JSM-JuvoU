@@ -68,7 +68,7 @@ const Header = () => {
         Navigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center px-5 top-0 lg:px-7.5 xl:px-10 max-lg:py-4">
+      <div className="flex items-center px-5 top-0 lg:px-7.5 xl:px-10 max-lg:py-0.5">
         {/* w-[12rem] xl:mr-8*/}
         <a href="#hero" className="flex block">
           <img src={lala} width={90} alt="JuvoU Logo" />

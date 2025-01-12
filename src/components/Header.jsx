@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import { juvou, juvou_text } from "../assets";
+import { juvou, juvou_text, lala } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -36,16 +36,16 @@ const Header = () => {
   };
 
   // Update body background color when menu state changes
-  useEffect(() => {
-    if (Navigation) {
-      document.body.classList.add("bg-n-8");
-    } else {
-      document.body.classList.remove("bg-n-8");
-    }
-    return () => {
-      document.body.classList.remove("bg-n-8");
-    };
-  }, [Navigation]);
+  // useEffect(() => {
+  //   if (Navigation) {
+  //     document.body.classList.add("bg-n-8");
+  //   } else {
+  //     document.body.classList.remove("bg-n-8");
+  //   }
+  //   return () => {
+  //     document.body.classList.remove("bg-n-8");
+  //   };
+  // }, [Navigation]);
 
   // Handle viewport resize and reset state
   useEffect(() => {
@@ -68,13 +68,12 @@ const Header = () => {
         Navigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a href="#hero" className="flex block w-[12rem] xl:mr-8">
-          <img src={juvou} width={90} alt="JuvoU Logo" />
+      <div className="flex items-center px-5 top-0 lg:px-7.5 xl:px-10 max-lg:py-4">
+        {/* w-[12rem] xl:mr-8*/}
+        <a href="#hero" className="flex block">
+          <img src={lala} width={90} alt="JuvoU Logo" />
         </a>
-
         {/* <img src={juvou_text} width={120} alt="JuvoU" /> */}
-
         <nav
           className={`${
             Navigation ? "flex mt-[95px] font-semibold font-code" : "hidden"
@@ -104,11 +103,9 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-
         <Button className="hidden lg:flex" href="#contact">
           Contact us
         </Button>
-
         <Button
           className="lg:hidden ml-auto"
           px="px-4"

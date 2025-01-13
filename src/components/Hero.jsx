@@ -2,7 +2,7 @@ import Section from "./Section";
 import Button from "./Button";
 import { new_juvou_cropped } from "../assets";
 import { updatecurve, } from "../assets";
-import { BackgroundCircles, Gradient, BottomLine } from "./design/Hero";
+import { BackgroundCircles, BottomLine } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";

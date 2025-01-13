@@ -23,10 +23,11 @@ import background from "./background.jpg";
 
 
 import juvou from "./new_juvou.svg";
-import juvou_text from "./juvou_text.svg";
 import lala from "./lala.svg";
+import new_juvou_cropped from "./new_juvou_cropped.svg";
 
 import curve from "./hero/curve.png";
+import updatecurve from "./hero/updatecurve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
@@ -86,8 +87,9 @@ export {
   
   
   juvou,
-  juvou_text,
   lala,
+  new_juvou_cropped,
+  updatecurve,
 
 
   check2,

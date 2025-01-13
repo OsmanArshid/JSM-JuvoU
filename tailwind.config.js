@@ -19,7 +19,6 @@ export default {
           5: "#858DFF",
           6: "#FF98E2",
           7: "#cfab88",
-          8: "#c4a571"
         },
         stroke: {
           1: "#26242C",
@@ -45,6 +44,7 @@ export default {
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
+        now: ["Now", ...fontFamily.sans],
       },
       letterSpacing: {
         tagline: ".15em",

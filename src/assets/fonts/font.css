@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Now';
+  src: url('/assets/fonts/Now-Light.ttf.woff') format('woff'),
+       url('/assets/fonts/Now-Light.ttf.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import {disablePageScroll, enablePageScroll} from "scroll-lock";
 
-import { juvou, juvou_text, lala } from "../assets";
+import {  lala } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 
-import {disablePageScroll, enablePageScroll} from "scroll-lock";
+
 
 
 const Header = () => {
@@ -15,15 +16,15 @@ const Header = () => {
   const [Navigation, setNavigation] = useState(false);
 
   // Toggle navigation
-  const toggleNavigation = () => {
-    setNavigation(!Navigation);
-    if (!Navigation) {
-        enablePageScroll();
-    }
-    if(Navigation) {
-        disablePageScroll();
-    }
-  };
+const toggleNavigation = () => {
+  if (Navigation) {
+    setNavigation(false);
+    enablePageScroll();
+  } else {
+    setNavigation(true);
+    disablePageScroll();
+  }
+};
 
   // Close navigation
   const handleClick = () => {
@@ -64,19 +65,18 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 backdrop-blur-sm border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
+      className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
         Navigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
       <div className="flex items-center px-5 top-0 lg:px-7.5 xl:px-10 max-lg:py-0.5">
-        {/* w-[12rem] xl:mr-8*/}
-        <a href="#hero" className="flex block">
+        {/* w-[9rem] xl:mr-8*/}
+        <a href="#hero" className="w-[9rem] block">
           <img src={lala} width={90} alt="JuvoU Logo" />
         </a>
-        {/* <img src={juvou_text} width={120} alt="JuvoU" /> */}
         <nav
           className={`${
-            Navigation ? "flex mt-[95px] font-semibold font-code" : "hidden"
+            Navigation ? "flex mt-[95px] font-semibold font-code" : "hidden "
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
@@ -106,6 +106,7 @@ const Header = () => {
         <Button className="hidden lg:flex" href="#contact">
           Contact us
         </Button>
+
         <Button
           className="lg:hidden ml-auto"
           px="px-4"

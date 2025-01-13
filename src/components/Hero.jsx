@@ -1,11 +1,15 @@
 import Section from "./Section";
 import Button from "./Button";
-import { new_juvou_cropped, robot } from "../assets";
+import { new_juvou_cropped } from "../assets";
 import { updatecurve } from "../assets";
 
 const Hero = () => {
   return (
-    <Section>
+    <Section
+      className="pt-[12rem] lg:pt-[12.5rem] xl:pt-[13.5rem]"
+      crosses
+      id="hero"
+    >
       <div className="container relative">
         <div className="relative z-1 text-center mx-auto mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <img
@@ -15,7 +19,8 @@ const Hero = () => {
             width={500}
           />
           <h1 className="font-now h3 mb-6 -mt-2 uppercase">
-            Shaping Ideas Into <span className="inline-block relative">
+            Shaping Ideas Into{" "}
+            <span className="inline-block relative">
               Strategies
               <img
                 src={updatecurve}
@@ -27,24 +32,12 @@ const Hero = () => {
             </span>
           </h1>
           {/* ------------------------------------------------------------------------------------------------------------------------------------- */}
-          <Button href="/pricing" className="mt-10">
-            Get Started
+          <Button href="#contact" className="mt-10">
+            Talk to Us
           </Button>
         </div>
 
-        <div className="relative ">
-          <div>
-            <div>
-              <div />
-
-              <div>
-                <img 
-                  src={robot}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="relative "></div>
       </div>
     </Section>
   );

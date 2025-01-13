@@ -17,7 +17,7 @@ const Section = ({className, id, crosses, crossesOffset, customPaddings, childre
 
       <div className="hidden absolute top-0 -left-1 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:left-2 xl:left-2" />
 
-      <div className="hidden absolute top-0 -right-[21px] w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:-right-2 xl:-right-2" />
+      <div className="hidden absolute top-0 -right-1 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:-right-2 xl:-right-2" />
     
       {crosses && (
         <>

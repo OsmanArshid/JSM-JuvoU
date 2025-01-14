@@ -40,12 +40,12 @@ export const navigation = [
   {
     id: "0",
     title: "About us",
-    url: "/#about-us",
+    url: "#about-us",
   },
   {
     id: "1",
     title: "Services",
-    url: "/#services",
+    url: "#services",
   },
   {
     id: "2",
@@ -55,7 +55,13 @@ export const navigation = [
   {
     id: "3",
     title: "Roadmap",
-    url: "/#roadmap",
+    url: "#roadmap",
+  },
+  {
+    id: "4",
+    title: "Contact s",
+    url: "/contact",
+    onlyMobile: true,
   },
 ];
 

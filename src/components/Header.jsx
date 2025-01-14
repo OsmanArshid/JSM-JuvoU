@@ -71,7 +71,7 @@ const toggleNavigation = () => {
     >
       <div className="flex items-center px-5 top-0 lg:px-7.5 xl:px-10 max-lg:py-0.5">
         {/* w-[9rem] xl:mr-8*/}
-        <a href="#hero" className="w-[9rem] block">
+        <a href="/#hero" className="w-[9rem] block">
           <img src={lala} width={90} alt="JuvoU Logo" />
         </a>
         <nav
@@ -103,7 +103,7 @@ const toggleNavigation = () => {
 
           <HamburgerMenu />
         </nav>
-        <Button className="hidden lg:flex" href="#contact">
+        <Button className="hidden lg:flex" href="/contact">
           Contact us
         </Button>
 

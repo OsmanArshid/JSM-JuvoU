@@ -1,11 +1,15 @@
 import Section from "./Section";
 import Button from "./Button";
+import Generating from "./Generating";
+import Notification from "./Notification";
+
 import { new_juvou_cropped } from "../assets";
 import { updatecurve, } from "../assets";
 import { BackgroundCircles, BottomLine } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
+
 
 
 const Hero = () => {
@@ -15,9 +19,7 @@ const Hero = () => {
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
       crosses
-      /* hatao */
       crossesOffset="lg:translate-y-[5.65rem] translate-x-1/2"
-      /* hatao */
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
@@ -42,7 +44,7 @@ const Hero = () => {
             </span>
           </h1>
           {/* ------------------------------------------------------------------------------------------------------------------------------------- */}
-          <Button href="#contact" className="mt-[105px]">
+          <Button href="/contact" className="mt-[105px]">
             Talk to Us
           </Button>
         </div>
@@ -51,6 +53,9 @@ const Hero = () => {
 
         <div className="relative max-w-[23rem] mx-auto md:max-w-4xl xl:mb-20">
           <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+            
+            
+
             <ScrollParallax isAbsolutelyPositioned>
               <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                 {heroIcons.map((icon, index) => (
@@ -62,11 +67,12 @@ const Hero = () => {
             </ScrollParallax>
 
             <ScrollParallax isAbsolutelyPositioned>
-              <div
+              
+              <Notification
                 className="hidden absolute -right-[5.5rem] bottom-[11rem]
                 w-[18rem] xl:flex"
-                title="Code generation"
-              ></div>
+                title="Digital Marketing"
+              />
             </ScrollParallax>
           </div>
 

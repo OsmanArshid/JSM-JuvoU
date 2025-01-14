@@ -1,6 +1,5 @@
 import Section from "./Section";
 import Button from "./Button";
-import Generating from "./Generating";
 import Notification from "./Notification";
 
 import { new_juvou_cropped } from "../assets";

@@ -14,6 +14,7 @@ import { HamburgerMenu } from "./design/Header";
 const Header = () => {
   const pathname = useLocation(); // used to remember the URL of the current page when the menu option is pressed
   const [Navigation, setNavigation] = useState(false);
+  const currentPath = `${pathname.pathname}${pathname.hash || ""}`;
 
   // Toggle navigation
 const toggleNavigation = () => {
@@ -91,7 +92,7 @@ const toggleNavigation = () => {
                            item.onlyMobile ? "lg:hidden" : ""
                          } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold font-code
                          ${
-                           pathname.pathname === item.url.split("#")[0]
+                           currentPath === item.url
                              ? "z-2 lg:text-color-1 rounded-full  shadow-[0px_0px_200px_28px_rgba(200,165,131,1)]"
                              : "  lg:text-n-2"
                          } lg:leading-5 lg:hover:text-n-3 xl:px-12`}

@@ -7,7 +7,7 @@ const Grid = () => {
   return (
     <Section
       id="about-us"
-      className="-mt-[340px] lg:-mt-[260px] md:-mt-[410px] p-[80px] sm:-mt-[270px]"
+      className="-mt-[340px] lg:-mt-[280px] md:-mt-[410px] p-[100px] sm:-mt-[270px]"
     >
       <BentoGrid>
         {gridItems.map((item) => (
@@ -17,6 +17,10 @@ const Grid = () => {
             title={item.title}
             description={item.description}
             className={item.className}
+            img={item.img}
+            imgClassName={item.imgClassName}
+            titleClassName={item.titleClassName}
+            spareImg={item.spareImg}
           />
         ))}
       </BentoGrid>

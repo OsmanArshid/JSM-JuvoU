@@ -77,7 +77,7 @@ const toggleNavigation = () => {
         </a>
         <nav
           className={`${
-            Navigation ? "flex mt-[95px] font-semibold font-code" : "hidden "
+            Navigation ? "flex mt-[15px] font-semibold font-code" : "hidden "
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
@@ -86,11 +86,11 @@ const toggleNavigation = () => {
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-n-1  
+                className={`block relative font-now text-2xl uppercase text-n-1  
                          hover:text-color-1 transition-colors
                          ${
                            item.onlyMobile ? "lg:hidden" : ""
-                         } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold font-code
+                         } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold font-now
                          ${
                            currentPath === item.url
                              ? "z-2 lg:text-color-1 rounded-full  shadow-[0px_0px_200px_28px_rgba(200,165,131,1)]"

@@ -15,11 +15,11 @@ export const Gradient = () => {
 export const BottomLine = () => {
   return (
     <>
-      <div className="hidden absolute top-[55.25rem] left-2 right-2 h-0.25 bg-n-6 pointer-events-none xl:block" />
+      <div className="hidden absolute top-[50.25rem] left-2 right-2 h-0.25 bg-n-6 pointer-events-none xl:block" />
 
-      <PlusSvg className="hidden absolute top-[54.9375rem] left-[0.175rem] z-2 pointer-events-none xl:block" />
+      <PlusSvg className="hidden absolute top-[49.9375rem] left-[0.175rem] z-2 pointer-events-none xl:block" />
 
-      <PlusSvg className="hidden absolute top-[54.9375rem] right-[0.18rem] z-2 pointer-events-none xl:block" />
+      <PlusSvg className="hidden absolute top-[49.9375rem] right-[0.18rem] z-2 pointer-events-none xl:block" />
     </>
   );
 };

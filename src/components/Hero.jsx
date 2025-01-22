@@ -56,7 +56,7 @@ const Hero = () => {
             
 
             <ScrollParallax isAbsolutelyPositioned>
-              <ul className="hidden absolute -left-[5.5rem] bottom-[10.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+              <ul className="hidden absolute -left-[5.5rem] bottom-[12.8rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                 {heroIcons.map((icon, index) => (
                   <li className="p-5" key={index}>
                     <img src={icon} width={24} height={25} alt={icon} />
@@ -68,7 +68,7 @@ const Hero = () => {
             <ScrollParallax isAbsolutelyPositioned>
               
               <Notification
-                className="hidden absolute -right-[5.5rem] bottom-[14rem]
+                className="hidden absolute -right-[5.5rem] bottom-[15rem]
                 w-[18rem] xl:flex"
                 title="Digital Marketing"
               />

@@ -7,12 +7,12 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "../src/assets/public/b1.svg",
+    img: "../src/assets/public/inter.jpg",
     spareImg: "",
   },
   {
     id: 2,
-    title: "We are very flexible with time zone communications",
+    title: "We are very flexible with time zones",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -32,7 +32,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "A Budget Friendly Remote Marketing Agency",
+    title: "A Budget Friendly Marketing Agency",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",

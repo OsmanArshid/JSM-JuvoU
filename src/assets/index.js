@@ -1,7 +1,4 @@
-import brainwave from "./brainwave.svg";
 import check from "./check.svg";
-import brainwaveSymbol from "./brainwave-symbol.svg";
-import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
 import gradient from "./gradient.png";
 import smallSphere from "./4-small.png";
@@ -19,7 +16,6 @@ import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
-import background from "./background.jpg";
 
 
 import juvou from "./new_juvou.svg";
@@ -82,7 +78,6 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
-  brainwave,
   check,
   
   
@@ -94,8 +89,6 @@ export {
 
   check2,
   loading1,
-  brainwaveSymbol,
-  brainwaveWhiteSymbol,
   play,
   gradient,
   smallSphere,
@@ -111,7 +104,6 @@ export {
   chromecast,
   sliders04,
   loading,
-  background,
   curve,
   robot,
   heroBackground,

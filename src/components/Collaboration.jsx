@@ -51,23 +51,34 @@ const Collaboration = () => {
               <div className="aspect-square border border-n-5 rounded-full w-60 m-auto flex">
                 <div className="bg-conic-gradient rounded-full p-[0.2rem] m-auto aspect-square w-[6.2rem]">
                   <div className="w-full h-full rounded-full flex items-center justify-center mr-[140px] bg-n-8">
-                    <img 
-                      src={juvou}
-                      width={90}
-                      height={68}
-                      alt="JuvoU"
-                    />
+                    <img src={juvou} width={90} height={68} alt="JuvoU" />
                   </div>
                 </div>
               </div>
 
-              <ul>{collabApps.map((app, index) => (
-                <li key={app.id}>
-                  <div>
-
-                  </div>
-                </li>
-              ))}
+              <ul>
+                {collabApps.map((app, index) => (
+                  <li
+                    key={app.id}
+                    className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
+                      index * 45
+                    }`}
+                  >
+                    <div
+                      className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
+                        index * 45
+                      }`}
+                    >
+                      <img
+                        className="m-auto"
+                        width={app.width}
+                        height={app.height}
+                        alt={app.title}
+                        src={app.icon}
+                      />
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

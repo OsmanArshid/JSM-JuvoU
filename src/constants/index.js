@@ -22,6 +22,7 @@ import {
   notification3,
   notification4,
   notion,
+  react,
   photoshop,
   plusSquare,
   recording01,
@@ -145,7 +146,7 @@ export const collabApps = [
   {
     id: "1",
     title: "Notion",
-    icon: notion,
+    icon: react,
     width: 34,
     height: 36,
   },

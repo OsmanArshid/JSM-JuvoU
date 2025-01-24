@@ -35,8 +35,8 @@ import gather from "./collaboration/3.png";
 import g_ads from "./collaboration/4.png";
 import meta from "./collaboration/5.png";
 import apollo from "./collaboration/6.png";
-import ahrefs from "./collaboration/Ahrefs.svg";
 import surferSEO from "./collaboration/surferSEO.png";
+import ahrefs from "./collaboration/Ahrefs.png";
 
 
 

@@ -3,7 +3,7 @@ import Button from "./Button";
 import Notification from "./Notification";
 
 import { new_juvou_cropped } from "../assets";
-import { updatecurve, } from "../assets";
+import { updatecurve } from "../assets";
 import { BackgroundCircles, BottomLine } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";

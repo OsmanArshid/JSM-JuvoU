@@ -115,21 +115,21 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "We design a custom strategy to make your mark to scale to new heights, We are the perfect solution for teams looking to work smarter.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Personalized Approach",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Timely Objective achievement",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Precision, Creativity, and a hint of fun",
   },
 ];
 

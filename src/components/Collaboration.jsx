@@ -3,6 +3,10 @@ import { collabApps, collabContent } from "../constants";
 import { check, juvou } from "../assets";
 import { updatecurve } from "../assets";
 import Button from "./Button";
+import { LeftCurve, RightCurve } from "./design/Collaboration";
+// import PlusSvg from "../assets/svg/PlusSvg";
+// import { BottomLine } from "./design/Hero";
+
 
 const Collaboration = () => {
     return (
@@ -11,7 +15,7 @@ const Collaboration = () => {
           <div className="max-w-[25rem]">
             <h2 className="h2 mb-4 md:mb-8">
               JuvoU for Seamless Business {""}
-              <span className="inline-block relative">
+              <span className="inline-block relative text-color-1">
                 Success
                 <img
                   src={updatecurve}
@@ -29,7 +33,7 @@ const Collaboration = () => {
                   <div className="flex items-center">
                     <img src={check} width={24} height={24} alt="check" />
 
-                    <h6 className="body-2 ml-3">{item.title}</h6>
+                    <h6 className="body-2 ml-5">{item.title}</h6>
                   </div>
                   {item.text && (
                     <p className="body-2 mt-3 text-n-3">{item.text}</p>
@@ -38,13 +42,14 @@ const Collaboration = () => {
               ))}
             </ul>
 
-            <Button>Talk To Us</Button>
+            <Button href="/contact">Talk To Us</Button>
           </div>
 
-          <div className="mt-4">
-            <p className="body-2 mb-4 text-n-3 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
+          <div className="lg:ml-auto xl:w-[38rem] mt-3.5">
+            <p className="body-2 mb-16 text-n-3 md:mb-[75px] lg:mb-[98px] lg:w-[270px] lg:mx-auto">
               At JuvoU, we believe staying up-to date with all the softwares to
-              make the work of Marketing a piece of Chocolate Cake
+              make the work of Marketing a piece of{" "}
+              <span className="text-color-2">Chocolate Cake</span>
             </p>
 
             <div className="aspect-square border border-n-5 rounded-full -translate-x-1/2 scale:75 md:scale-100 left-1/2 relative flex w-[22rem]">
@@ -80,9 +85,19 @@ const Collaboration = () => {
                   </li>
                 ))}
               </ul>
+
+              <LeftCurve />
+              <RightCurve />
             </div>
           </div>
         </div>
+
+        {/* <div className="hidden absolute top-[80.25rem] left-2 right-2 h-0.25 bg-n-6 pointer-events-none xl:block" />
+
+        <PlusSvg className="hidden absolute top-[79.9375rem] left-[0.175rem] z-2 pointer-events-none xl:block" />
+
+        <PlusSvg className="hidden absolute top-[79.9375rem] right-[0.18rem] z-2 pointer-events-none xl:block" /> */}
+
       </Section>
     );
 };

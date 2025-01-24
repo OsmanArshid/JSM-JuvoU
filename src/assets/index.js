@@ -29,14 +29,30 @@ import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
+import photoshop from "./collaboration/photoshop.png";
+import react from "./collaboration/2.png";
+import gather from "./collaboration/3.png";
+import g_ads from "./collaboration/4.png";
+import meta from "./collaboration/5.png";
+import apollo from "./collaboration/6.png";
+import ahrefs from "./collaboration/Ahrefs.svg";
+import surferSEO from "./collaboration/surferSEO.png";
+
+
+
+
+
+
+
+
 import discord from "./collaboration/discord.png";
 import figma from "./collaboration/figma.png";
 import framer from "./collaboration/framer.png";
 import notion from "./collaboration/notion.png";
-import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
+
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -69,7 +85,7 @@ import benefitIcon1 from "./benefits/icon-1.svg";
 import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
-import benefitImage2 from "./benefits/image-2.png";
+import benefitImage2 from "../assets/new_juvou.svg";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -84,6 +100,11 @@ export {
   lala,
   new_juvou_cropped,
   updatecurve,
+
+
+
+
+  
   check2,
   loading1,
   play,
@@ -105,16 +126,29 @@ export {
   curve,
   robot,
   heroBackground,
-  curve1,
-  curve2,
   discord,
   figma,
   framer,
   notion,
-  photoshop,
   protopie,
   raindrop,
   slack,
+
+
+  photoshop,
+  curve1,
+  curve2,
+  react,
+  gather,
+  g_ads,
+  meta,
+  apollo,
+  ahrefs,
+  surferSEO,
+  
+  
+  
+  
   service1,
   service2,
   service3,

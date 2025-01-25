@@ -95,7 +95,7 @@ const toggleNavigation = () => {
                            currentPath === item.url
                              ? "z-2 lg:text-color-1 rounded-full  shadow-[0px_0px_200px_28px_rgba(200,165,131,1)]"
                              : "  lg:text-n-2"
-                         } lg:leading-5 lg:hover:text-n-3 xl:px-12`}
+                         } lg:leading-5 lg:hover:text-color-1 xl:px-12`}
               >
                 {item.title}
               </a>

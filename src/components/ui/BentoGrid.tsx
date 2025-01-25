@@ -52,8 +52,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["Google Ads", "Meta Ads", "Ahrefs"];
-  const rightLists = ["React", "Surfer SEO", "..."];
+  const leftLists = ["React", "Meta Ads", "Ahrefs"];
+  const rightLists = ["Google Ads", "Surfer SEO", "Apollo"];
 
   const [copied, setCopied] = useState(false);
 
@@ -82,7 +82,7 @@ export const BentoGridItem = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgba(35,35,35,0.5)",
+        background: "rgba(22,19,30,1)",
         backgroundColor:
           "linear-gradient(90deg, rgba(35,35,35,0.5) 0%, rgba(35,35,35,0.5) 100%)",
       }}

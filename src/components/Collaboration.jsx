@@ -4,8 +4,7 @@ import { check, juvou } from "../assets";
 import { updatecurve } from "../assets";
 import Button from "./Button";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
-// import PlusSvg from "../assets/svg/PlusSvg";
-// import { BottomLine } from "./design/Hero";
+import PlusSvg from "../assets/svg/PlusSvg";
 
 
 const Collaboration = () => {
@@ -92,12 +91,11 @@ const Collaboration = () => {
           </div>
         </div>
 
-        {/* <div className="hidden absolute top-[80.25rem] left-2 right-2 h-0.25 bg-n-6 pointer-events-none xl:block" />
+        <div className="hidden absolute top-[37.65rem] left-2 right-2 h-0.25 bg-n-6 pointer-events-none xl:block" />
 
-        <PlusSvg className="hidden absolute top-[79.9375rem] left-[0.175rem] z-2 pointer-events-none xl:block" />
+        <PlusSvg className="hidden absolute top-[37.3375rem] left-[0.175rem] z-2 pointer-events-none xl:block" />
 
-        <PlusSvg className="hidden absolute top-[79.9375rem] right-[0.18rem] z-2 pointer-events-none xl:block" /> */}
-
+        <PlusSvg className="hidden absolute top-[37.3375rem] right-[0.18rem] z-2 pointer-events-none xl:block" />
       </Section>
     );
 };

@@ -37,7 +37,7 @@ const Approach = () => {
               animationSpeed={3.5}
               containerClassName="bg-black"
               colors={[[52, 53, 64]]}
-              dotSize={3}
+              dotSize={4}
             />
           </Card>
 

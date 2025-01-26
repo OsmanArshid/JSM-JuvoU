@@ -1,10 +1,22 @@
 import Section from "./Section";
-import {smallSphere, stars} from "../assets";
+import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import PricingList from "./PricingList";
-import {LeftLine, RightLine} from "./design/Pricing";
+import { LeftLine, RightLine } from "./design/Pricing";
+import { useState, useEffect } from "react";
 
 const Pricing = () => {
+  const [showLines, setShowLines] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowLines(window.innerWidth === window.screen.width);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <Section id="pricing" className="overflow-hidden -mt-16">
       <div className="container relative z-2">
@@ -34,14 +46,14 @@ const Pricing = () => {
         />
 
         <div className="relative">
-            <PricingList />
-            <LeftLine />
-            <RightLine />
+          <PricingList />
+          {showLines && <LeftLine />}
+          {showLines && <RightLine />}
         </div>
       </div>
       {/* Affordable, Like Your Netflix Plan.... Because Ads Don’t Need Gucci.... Scaling Dreams, Not Bills */}
     </Section>
   );
-}
+};
 
-export default Pricing
+export default Pricing;

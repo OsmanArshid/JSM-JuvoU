@@ -4,6 +4,8 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import Section from "./Section";
+import PlusSvg from "../assets/svg/PlusSvg";
+
 
 const Approach = () => {
   return (
@@ -53,9 +55,16 @@ const Approach = () => {
           </Card>
         </div>
       </section>
+
+      <div className="hidden absolute top-[60.85rem] left-2 right-2 h-0.25 bg-n-6 pointer-events-none xl:block" />
+
+      <PlusSvg className="hidden absolute top-[60.5275rem] left-[0.175rem] z-2 pointer-events-none xl:block" />
+
+      <PlusSvg className="hidden absolute top-[60.5275rem] right-[0.18rem] z-2 pointer-events-none xl:block" />
     </Section>
   );
 }
+
 
 const Card = ({
   title,

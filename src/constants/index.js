@@ -197,35 +197,44 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
+    title: "SMEs",
+    description:
+      "Budget-friendly solutions tailored for small and medium businesses to kickstart growth with powerful insights and tools",
+    price: "25,000",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Comprehensive market research tailored to your industry",
+      "Access to SEO-optimized strategies for improved visibility",
+      "AI-driven social media scheduling for consistency",
+      "Content ideation and writing customized for your brand",
+      "A mini brand analysis report to identify growth areas",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Custom",
+    description:
+      "You Provide; We Provide... Fully customizable marketing solutions built to match your business’s unique challenges and Budget",
+    price: "You Decide",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "A dedicated marketing strategist for tailored campaigns",
+      "Customizable social media ad campaigns with in-depth analytics",
+      "Priority brand consultation and strategic planning sessions",
+      "Access to our analytics dashboard for tracking performance metrics",
+      "Custom AI tools for better lead generation and engagement",
     ],
   },
   {
     id: "2",
     title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    description:
+      "Elite solutions for large businesses focused on scaling, optimizing, and dominating their markets",
+    price: "50,000",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Full-scale market research and competitor analysis reports",
+      "Dedicated account manager for 24/7 support and guidance",
+      "Advanced email marketing campaigns with performance insights",
+      "Custom AI-powered chatbot for lead generation and customer support",
+      "Quarterly branding and strategy workshops tailored to your team",
     ],
   },
 ];
@@ -259,7 +268,7 @@ export const benefits = [
   {
     id: "3",
     title: "Web Development",
-    text: "We make the web a place where creativity meets functionality. Look at our site",
+    text: "We make the web a place where creativity meets functionality. Look at OUR site !!!",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,

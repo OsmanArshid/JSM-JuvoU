@@ -33,8 +33,10 @@ const Pricing = () => {
           title="Pricing, Without Selling Your Kidney"
         />
 
-        <div>
-            
+        <div className="relative">
+            <PricingList />
+            <LeftLine />
+            <RightLine />
         </div>
       </div>
       {/* Affordable, Like Your Netflix Plan.... Because Ads Don’t Need Gucci.... Scaling Dreams, Not Bills */}

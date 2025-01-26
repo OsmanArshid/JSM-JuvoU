@@ -6,6 +6,8 @@ import Grid from "./components/Grid";
 import Benefits from "./components/Benefits";
 import Collaboration from "./components/Collaboration";
 import Approach from "./components/Approach";
+import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Benefits />
         <Collaboration />
         <Approach />
+        <Pricing />
+        <Footer />
       </div>
 
       <ButtonGradient />

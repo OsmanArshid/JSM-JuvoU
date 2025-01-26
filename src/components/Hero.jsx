@@ -27,7 +27,7 @@ const Hero = () => {
             className="inline-block mt-6 mb-[48px]"
             src={new_juvou_cropped}
             alt="Juvou"
-            width={560}
+            width={600}
           />
           <h1 className="font-now h3 mb-6 -mt-2 uppercase">
             Shaping Ideas Into{" "}

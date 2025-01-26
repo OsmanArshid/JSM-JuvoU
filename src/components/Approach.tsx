@@ -21,7 +21,7 @@ const Approach = () => {
             <CanvasRevealEffect
               animationSpeed={3.5}
               containerClassName="bg-black"
-              colors={[[52, 53, 64]]}
+              colors={[[196, 165, 113]]}
               dotSize={3}
             />
           </Card>
@@ -34,7 +34,7 @@ const Approach = () => {
             <CanvasRevealEffect
               animationSpeed={3.5}
               containerClassName="bg-black"
-              colors={[[196, 165, 113]]}
+              colors={[[52, 53, 64]]}
               dotSize={3}
             />
           </Card>
@@ -47,7 +47,7 @@ const Approach = () => {
             <CanvasRevealEffect
               animationSpeed={3.5}
               containerClassName="bg-black"
-              colors={[[52, 53, 64]]}
+              colors={[[196, 165, 113]]}
               dotSize={3}
             />
           </Card>
@@ -73,7 +73,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-n-4 group/canvas-card flex items-center justify-center max-w-sm w-full mx-auto p-4 relative lg:h-[34rem] rounded-xl"
+      className="border border-n-4 group/canvas-card flex items-center justify-center max-w-sm w-full mx-auto p-4 relative lg:h-[33rem] rounded-xl"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 text-n-3" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-n-3" />

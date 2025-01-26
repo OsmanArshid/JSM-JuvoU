@@ -25,7 +25,7 @@ const PricingList = () => {
                     className={`leading-none font-bold text-color-1 
                                ${
                                  item.id === "0" || item.id === "2"
-                                   ? "text-[2.3rem]"
+                                   ? "text-[2.2rem]"
                                    : "text-[1.6rem] text-center"
                                }`}
                   >
@@ -50,7 +50,7 @@ const PricingList = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mt-16 w-full mb-6">
+      <div className="flex justify-center mt-14 w-full mb-6">
         <Button href="/contact" className="w-1/3 text-center leading-none">
           Talk to Us for Pricing
         </Button>

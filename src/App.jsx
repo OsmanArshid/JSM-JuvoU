@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-      <div className="px-6 pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <div className="px-6 pt-[4.75rem] lg:pt-[5.25rem] overflow-clip">
         <Header />
         <Hero />
         <Grid />

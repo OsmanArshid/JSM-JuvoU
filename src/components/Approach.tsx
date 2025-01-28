@@ -10,7 +10,7 @@ import PlusSvg from "../assets/svg/PlusSvg";
 const Approach = () => {
   return (
     <Section>
-      <section id="roadmap" className="py-24">
+      <section id="roadmap" className="py-[99px]">
         <h1 className="heading font-now">
           Our <span className="text-color-1"> Approach</span>
         </h1>

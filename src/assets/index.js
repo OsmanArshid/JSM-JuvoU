@@ -40,7 +40,7 @@ import ahrefs from "./collaboration/Ahrefs.png";
 
 
 
-
+import footpic from "./feet.png"
 
 
 
@@ -102,7 +102,7 @@ export {
   updatecurve,
 
 
-
+  footpic,
 
   
   check2,

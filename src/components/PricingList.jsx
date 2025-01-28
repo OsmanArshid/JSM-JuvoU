@@ -51,7 +51,7 @@ const PricingList = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mt-14 w-full mb-6">
+      <div className="sm:mt-6 flex justify-center xl:mt-14 w-full mb-6">
         <Button icon={<FaLocationArrow />} href="/contact" className="w-1/3 text-center leading-none">
           Price With Us
         </Button>

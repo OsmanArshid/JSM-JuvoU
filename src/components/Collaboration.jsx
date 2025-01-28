@@ -26,7 +26,7 @@ const Collaboration = () => {
               </span>
             </h2>
 
-            <ul className="mb-10 md:mb-14 max-w-[22rem] text-white">
+            <ul className="mb-8 md:mb-[45px] max-w-[22rem] text-white">
               {collabContent.map((item) => (
                 <li key={item.id} className="mb-3 py-3">
                   <div className="flex items-center">
@@ -91,11 +91,11 @@ const Collaboration = () => {
           </div>
         </div>
 
-        <div className="hidden absolute top-[37.65rem] left-2 right-2 h-0.25 bg-n-6 pointer-events-none xl:block" />
+        <div className="hidden absolute top-[36.85rem] left-2 right-2 h-0.25 bg-n-6 pointer-events-none xl:block" />
 
-        <PlusSvg className="hidden absolute top-[37.3375rem] left-[0.175rem] z-2 pointer-events-none xl:block" />
+        <PlusSvg className="hidden absolute top-[36.5275rem] left-[0.175rem] z-2 pointer-events-none xl:block" />
 
-        <PlusSvg className="hidden absolute top-[37.3375rem] right-[0.18rem] z-2 pointer-events-none xl:block" />
+        <PlusSvg className="hidden absolute top-[36.5275rem] right-[0.18rem] z-2 pointer-events-none xl:block" />
       </Section>
     );
 };

@@ -8,9 +8,6 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 
-
-
-
 const Header = () => {
   const pathname = useLocation(); // used to remember the URL of the current page when the menu option is pressed
   const [Navigation, setNavigation] = useState(false);

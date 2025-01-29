@@ -53,14 +53,19 @@ const Pricing = () => {
         </div>
       </div>
       {/* Affordable, Like Your Netflix Plan.... Because Ads Don’t Need Gucci.... Scaling Dreams, Not Bills */}
-
-      <div className="hidden absolute top-[104.55rem] left-2 right-2 h-0.25 bg-n-6 pointer-events-none md:block" />
-
-      <PlusSvg className="hidden absolute top-[104.2275rem] left-[0.175rem] z-2 pointer-events-none md:block" />
-
-      <PlusSvg className="hidden absolute top-[104.2275rem] right-[0.18rem] z-2 pointer-events-none md:block" />
+      <div className="absolute left-2 right-2 mt-12 h-0.25 bg-n-6 pointer-events-none" />
+      <PlusSvg className="hidden absolute left-[0.175rem] xl:bottom-7 lg:bottom-3 z-2 pointer-events-none lg:block" />
+      <PlusSvg className="hidden absolute right-[0.18rem] xl:bottom-7 lg:bottom-3 z-2 pointer-events-none lg:block" />{" "}
     </Section>
   );
 };
 
 export default Pricing;
+
+
+      // {/* Line */}
+      // <div className="absolute left-2 right-2 mt-12 h-0.25 bg-n-6 pointer-events-none" />
+      // {/* Left Plus Icon */}
+      // <PlusSvg className="hidden absolute left-[0.175rem] -top-3 z-2 pointer-events-none md:block" />
+      // {/* Right Plus Icon */}
+      // <PlusSvg className="hidden absolute right-[0.18rem] -top-3 z-2 pointer-events-none md:block" />{" "}
